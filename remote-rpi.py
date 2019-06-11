@@ -13,11 +13,17 @@ def relay_control(strCommand):
     print('Received: ' + strCommand)
     if strCommand == 'on':
         print('On Processed')
+        return "Now On"
         # GPIO.output(pin, GPIO.HIGH)
     elif strCommand == 'off':
         print('Off Processed')
         # GPIO.output(pin, GPIO.LOW)
+        return "Now Off"
+    else:
+        print("echo back: "+strCommand)
+        return "echo back: "+strCommand
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    # app.run(host='0.0.0.0')
+    app.run()
