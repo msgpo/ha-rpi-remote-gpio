@@ -1,3 +1,4 @@
+# example taken from https://community.home-assistant.io/t/remote-raspberry-pi-3-gpio/44406/10
 from flask import Flask
 # import RPi.GPIO as GPIO
 
